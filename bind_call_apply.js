@@ -126,6 +126,21 @@ console.log(clientData);
 
 
 
+/* example six */
+var anArrayLikeObj = {0:"Martin", 1:78, 2:67, 3:["Letta", "Marieta", "Pauline"], length:4 };
+
+var newArray = Array.prototype.slice.call(anArrayLikeObj, 0);
+console.log(newArray);
+
+console.log(Array.prototype.indexOf.call(anArrayLikeObj, "Martin")); // 0
+
+console.log (Array.prototype.pop.call(anArrayLikeObj));
+console.log (anArrayLikeObj); // Object {0: "Martin", 1: 78, 2: 67, length: 3}   notice: length becomes 3
+
+console.log (Array.prototype.push.call(anArrayLikeObj, 'Bowen'));
+console.log (anArrayLikeObj); // Object {0: "Martin", 1: 78, 2: 67, 3: "Bowen", length: 4}
+            
+
 
 
 
