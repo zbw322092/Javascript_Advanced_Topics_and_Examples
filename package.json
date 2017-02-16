@@ -1,0 +1,22 @@
+{
+  "name": "javascript_advanced_topics_and_examples",
+  "version": "1.0.0",
+  "description": "Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbw322092/Javascript_Advanced_Topics_and_Examples.git"
+  },
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "Bowen Zhong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbw322092/Javascript_Advanced_Topics_and_Examples/issues"
+  },
+  "homepage": "https://github.com/zbw322092/Javascript_Advanced_Topics_and_Examples#readme"
+}
