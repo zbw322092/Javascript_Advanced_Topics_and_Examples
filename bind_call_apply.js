@@ -47,3 +47,31 @@ showUsersData2();
 showUsersData2.bind(users)();
 
 
+
+
+/* example three */
+var cars = {
+	data:[
+		{name:"Honda Accord", age:14},
+		{name:"Tesla Model S", age:2}
+	]
+};
+
+users.showData.bind(cars)();
+// or
+cars.showData = users.showData.bind(cars);
+cars.showData();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
