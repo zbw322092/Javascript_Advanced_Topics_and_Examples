@@ -23,3 +23,14 @@ Object.defineProperty(o, 'b', { set: function(x) {this.a = x / 2} });
 console.log(o);
 o.b = 10;
 console.log(o); // { a: 5 }
+
+
+/* getter */
+var obj = {
+	log: ['test'],
+	get latest() {
+		if (this.log.length == 0) return undefined;
+		return this.log[this.log.length - 1];
+	}
+};
+console.log(obj.latest); // test
