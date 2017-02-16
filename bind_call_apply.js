@@ -142,7 +142,13 @@ console.log (anArrayLikeObj); // Object {0: "Martin", 1: 78, 2: 67, 3: "Bowen", 
             
 
 
+/* example seven */
+console.log (Math.max (23, 11, 34, 56));
 
+var allNumbers = [23, 11, 34, 56];
+// console.log (Math.max (allNumbers)); // NaN
+// console.log(Math.max.apply(allNumbers)); // -Infinity
+console.log(Math.max.apply(null, allNumbers)); // 56
 
 
 
