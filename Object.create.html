@@ -1,0 +1,54 @@
+<html>
+<body>
+	<script type="text/javascript">
+
+		var o = Object.create({}, {
+			p: {
+				value: 42
+			}
+		});
+
+		console.log(o);
+		console.log(Object.getOwnPropertyDescriptor(o, 'p'));
+
+
+
+		function Shape() {
+			this.x = 0;
+			this.y = 0;
+		}
+
+		var s = new Shape();
+		console.log(s);
+
+		Shape.prototype.move = function(x, y) {
+			this.x += x;
+			this.y += y;
+			console.log('Shape moved');
+		};
+
+		function Rectangle() {
+			Shape.call(this);
+		}
+
+		console.log(Rectangle.prototype);
+
+		var r = new Rectangle();
+		console.log(r);
+
+		Rectangle.prototype = Object.create(Shape.prototype);
+		console.log(Rectangle.prototype);
+		console.log(Rectangle.prototype.constructor);
+
+		Rectangle.prototype.constructor = Rectangle;
+
+		var r2 = new Rectangle();
+		console.log(r2);
+		console.log(r2.move());
+
+
+
+
+	</script>
+</body>
+</html>
